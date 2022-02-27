@@ -8394,12 +8394,8 @@ a.replay-btn i {
 }
 .contact-social a {
   border: 2px solid #be7370;
-  background: transparent;
-}
-.contact-social a:hover {
-  background: #fff;
   color: #9e4b47;
-  border-color: transparent;
+  background: transparent;
 }
 .contact__left {
   padding: 80px 60px;
