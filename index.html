@@ -32,6 +32,24 @@
           flex-direction: column;
           align-items: center;
         }
+        .slider-area {
+          background-position: 65% 45%;
+        }
+        .slider-text span {
+          color: #fff7ef;
+        }
+        .slider-text h2 {
+          color: #fff;
+        }
+        .slider-text p {
+          color: #f2f2f2;
+        }
+      }
+      .testimonial__active .slick-dots {
+        display: none;
+      }
+      .wa-chat-box-poweredby {
+        display: none;
       }
     </style>
 
@@ -123,9 +141,6 @@
                             </div>
                         </div>
                     </div>
-                    <h5 class="cta-2 f-right mt-15 d-none d-md-block">
-                        <span>Mail:</span><a href="mailTo:arbazpathan047@gmail.com"> arbazpathan047@gmail.com</a>
-                    </h5>
                 </div>
             </div>
         </div>
@@ -623,7 +638,7 @@
                                 <div class="col-12">
                                     <div class="testimonial__wrapper">
                                         <div class="testimonial__img">
-                                            <img src="img/testimonial/arbaz-doctor.png" alt="">
+                                            <img src="img/testimonial/arbaz-doctor.png" alt="" width="200">
                                             <div class="testimonial__img-inner">
                                                 <div class="testimonial-social text-right">
                                                     <a href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"><i class="fab fa-facebook-f"></i></a>
@@ -665,76 +680,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="single__testimonial text-center">
-                                <div class="col-12">
-                                    <div class="testimonial__wrapper">
-                                        <div class="testimonial__img">
-                                            <img src="img/testimonial/t1.png" alt="">
-                                            <div class="testimonial__img-inner">
-                                                <div class="testimonial-social text-right">
-                                                    <a href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                                    <a href="#"><i class="fab fa-vimeo-square"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial__text">
-                                            <span>Surgent</span>
-                                            <a href="team.html">
-                                                <h4>Alex D. Denzel</h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single__testimonial text-center">
-                                <div class="col-12">
-                                    <div class="testimonial__wrapper">
-                                        <div class="testimonial__img">
-                                            <img src="img/testimonial/t2.png" alt="">
-                                            <div class="testimonial__img-inner">
-                                                <div class="testimonial-social text-right">
-                                                    <a href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                                    <a href="#"><i class="fab fa-vimeo-square"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial__text">
-                                            <span>Surgent</span>
-                                            <a href="team.html">
-                                                <h4>Alex D. Denzel</h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single__testimonial text-center">
-                                <div class="col-12">
-                                    <div class="testimonial__wrapper">
-                                        <div class="testimonial__img">
-                                            <img src="img/testimonial/t1.png" alt="">
-                                            <div class="testimonial__img-inner">
-                                                <div class="testimonial-social text-right">
-                                                    <a href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                                    <a href="#"><i class="fab fa-vimeo-square"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial__text">
-                                            <span>Surgent</span>
-                                            <a href="team.html">
-                                                <h4>Alex D. Denzel</h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -1220,6 +1165,43 @@
     <script src="js/jquery.twentytwenty.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+			var url =
+				"https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21984";
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = url;
+			var options = {
+				enabled: true,
+				chatButtonSetting: {
+					backgroundColor: "#4dc247",
+					ctaText: "",
+					borderRadius: "25",
+					marginLeft: "0",
+					marginBottom: "150",
+					marginRight: "50",
+					position: "right",
+				},
+				brandSetting: {
+					brandName: "Feel Good",
+					brandSubTitle: "",
+					brandImg: "/img/wp-icon.png",
+					welcomeText: "Hi there!\nHow can I help you?",
+					messageText: "Hello",
+					backgroundColor: "#0a5f54",
+					ctaText: "Start Chat",
+					borderRadius: "25",
+					autoShow: false,
+					phoneNumber: "918169129282",
+				},
+			};
+			s.onload = function () {
+				CreateWhatsappChatWidget(options);
+			};
+			var x = document.getElementsByTagName("script")[0];
+			x.parentNode.insertBefore(s, x);
+		</script>
 </body>
 
 </html>
