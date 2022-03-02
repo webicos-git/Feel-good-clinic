@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<title>Progery - Cosmetic & Plastic Surgery HTML Template</title>
+		<title>Feel Good - Shop</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="manifest" href="site.webmanifest" />
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/fav.png" />
 		<!-- Place favicon.ico in the root directory -->
 
 		<!-- CSS here -->
@@ -29,6 +29,13 @@
       .wa-chat-box-poweredby {
         display: none;
       }
+      .featured__product-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 0.25rem;
+      }
     </style>
 	</head>
 
@@ -37,7 +44,7 @@
 			<p class="browserupgrade">
 				You are using an <strong>outdated</strong> browser. Please
 				<a href="https://browsehappy.com/">upgrade your browser</a> to improve
-				your <a href="#" class="text-white">Experience</a> and security.
+				your <a href="#" class="theme-color">Experience</a> and security.
 			</p>
 		<![endif]-->
 		<!-- header area start -->
@@ -54,52 +61,6 @@
 
 		<header class="header-transparent">
 			<div class="header-area d-none d-lg-block">
-				<div class="header-top">
-					<div class="container container-3">
-						<div class="header-top__inner-4">
-							<div class="row g-0">
-								<div class="col-xxl-2 col-xl-2 col-lg-3">
-									<div class="header-left header__left-4">
-										<div class="emergency">
-											<span>Emergency: <b>9999</b></span>
-										</div>
-									</div>
-								</div>
-								<div
-									class="col-xxl-4 col-xl-4 col-lg-5 d-flex align-items-center"
-								>
-									<div class="header__list header__list-4">
-										<ul>
-											<li class="mr-35">
-												<a href="mailto:info@webmail.com"
-													><i class="fal fa-envelope"></i> info@webmail.com</a
-												>
-											</li>
-											<li>
-												<a href="mailto:info@webmail.com"
-													><i class="fal fa-phone"></i>980-098-098-09</a
-												>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div
-									class="col-xxl-2 col-xl-6 col-lg-4 offset-xxl-4 d-flex align-items-center justify-content-end"
-								>
-									<div class="header-social__4 text-end">
-										<a
-											href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"
-											><i class="fab fa-facebook-f"></i
-										></a>
-										<a href="#"><i class="fab fa-twitter"></i></a>
-										<a href="#"><i class="fab fa-behance"></i></a>
-										<a href="#"><i class="fab fa-youtube"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- /. header top -->
 				<div class="header-bottom">
 					<div class="container container-3">
@@ -123,68 +84,10 @@
 												>
 													<nav id="mobile-menu">
 														<ul>
-															<li>
-																<a href="index.html">Home</a>
-																<ul class="submenu">
-																	<li><a href="index.html">Home style 1</a></li>
-																	<li>
-																		<a href="index-2.html">Home style 2</a>
-																	</li>
-																	<li>
-																		<a href="index-3.html">Home style 3</a>
-																	</li>
-																	<li>
-																		<a href="index-4.html">Home style 4</a>
-																	</li>
-																</ul>
-															</li>
+															<li><a href="index.html">Home</a></li>
 															<li><a href="about.html">About</a></li>
-															<li>
-																<a href="#">Pages</a>
-																<ul class="submenu">
-																	<li><a href="portfolio.html">Case</a></li>
-																	<li>
-																		<a href="case-details.html">Case Details</a>
-																	</li>
-																	<li>
-																		<a href="doctor-details.html"
-																			>Doctor Details</a
-																		>
-																	</li>
-																	<li><a href="faq.html">Faq</a></li>
-																	<li>
-																		<a href="portfolio.html">Portfolio</a>
-																	</li>
-																	<li>
-																		<a href="price-plan.html">Price Plan</a>
-																	</li>
-																	<li><a href="shop.html">Shop</a></li>
-																	<li>
-																		<a href="shop-details.html">Shop Details</a>
-																	</li>
-																	<li><a href="team.html">Team</a></li>
-																</ul>
-															</li>
-															<li>
-																<a href="service.html">Services</a>
-																<ul class="submenu">
-																	<li><a href="service.html">Services</a></li>
-																	<li>
-																		<a href="service-details.html"
-																			>Service Details</a
-																		>
-																	</li>
-																</ul>
-															</li>
-															<li>
-																<a href="blog.html">News</a>
-																<ul class="submenu">
-																	<li><a href="blog.html">News</a></li>
-																	<li>
-																		<a href="news-details.html">News Details</a>
-																	</li>
-																</ul>
-															</li>
+															<li><a href="portfolio.html">Gallery</a></li>
+															<li><a href="service.html">Services</a></li>
 															<li><a href="contact.html">Contact</a></li>
 														</ul>
 													</nav>
@@ -201,102 +104,9 @@
 										<div class="header-cta header-cta__4 text-right">
 											<ul>
 												<li>
-													<a href="#" class="search-popup-btn"
-														><i class="fal fa-search"></i
-													></a>
-												</li>
-												<li>
 													<a href="shop.html"
 														><i class="fal fa-shopping-cart"></i
 													></a>
-													<div class="minicart">
-														<div class="minicart-body">
-															<div class="minicart-content">
-																<ul class="text-left">
-																	<li>
-																		<div class="minicart-img">
-																			<a href="shop-details.html" class="p-0"
-																				><img
-																					src="img/product/1.jpg"
-																					class="w-100"
-																					alt=""
-																			/></a>
-																		</div>
-																		<div class="minicart-desc">
-																			<a href="shop-details.html" class="p-0"
-																				>Capitalize on low hanging fruit t</a
-																			>
-																			<strong>1 × $250.00</strong>
-																		</div>
-																		<div class="remove">
-																			<i class="fal fa-times"></i>
-																		</div>
-																	</li>
-
-																	<li>
-																		<div class="minicart-img">
-																			<a href="shop-details.html" class="p-0"
-																				><img
-																					src="img/product/2.jpg"
-																					class="w-100"
-																					alt=""
-																			/></a>
-																		</div>
-																		<div class="minicart-desc">
-																			<a href="shop-details.html" class="p-0"
-																				>Leather Courriere duffle ba</a
-																			>
-																			<strong>1 × $150.00</strong>
-																		</div>
-																		<div class="remove">
-																			<i class="fal fa-times"></i>
-																		</div>
-																	</li>
-
-																	<li>
-																		<div class="minicart-img">
-																			<a href="shop-details.html" class="p-0"
-																				><img
-																					src="img/product/3.jpg"
-																					class="w-100"
-																					alt=""
-																			/></a>
-																		</div>
-																		<div class="minicart-desc">
-																			<a href="shop-details.html" class="p-0"
-																				>Party Supplies Around Cupcake</a
-																			>
-																			<strong>1 × $150.00</strong>
-																		</div>
-																		<div class="remove">
-																			<i class="fal fa-times"></i>
-																		</div>
-																	</li>
-																</ul>
-															</div>
-														</div>
-														<div class="minicart-checkout mb-30">
-															<div
-																class="minicart-checkout-heading mt-8 mb-25 overflow-hidden"
-															>
-																<strong class="float-left">Subtotal:</strong>
-																<span class="price float-right">503.00</span>
-															</div>
-															<div class="minicart-checkout-links">
-																<a
-																	href="shop.html"
-																	class="generic-btn btn-1 text-center text-uppercase w-100 mb-20"
-																	>View cart</a
-																>
-																<a
-																	href="shop.html"
-																	class="generic-btn btn-1 text-center text-uppercase w-100 mb-20"
-																	>Checkout</a
-																>
-															</div>
-														</div>
-													</div>
-													<!-- /. minicart -->
 												</li>
 												<li class="visible-only-md">
 													<a href="#" class="info__toggle-btn"
@@ -378,7 +188,7 @@
 				</div>
 			</nav>
 			<div class="responsive-logo">
-				<a href="index.html"><img src="img/logo/logo-white.png" alt="" /></a>
+				<a href="index.html"><h3 class="text-white">Feel Good</h3></a>
 			</div>
 			<div class="tab-content" id="nav-tabContent">
 				<div
@@ -424,7 +234,8 @@
 			</div>
 			<div class="logo-side mb-30">
 				<a href="index.html">
-					<img src="img/logo/logo-white.png" alt="" />
+					<!-- <img src="img/logo/logo-white.png" alt="" /> -->
+          <h3 class="text-white">Feel Good</h3>
 				</a>
 			</div>
 			<div class="side-info mb-30">
@@ -497,7 +308,7 @@
 							<div class="col-xxl-6">
 								<div class="breadcrumb__left">
 									<div class="breadcrumb__title">
-										<span>Welcome to our company</span>
+										<span>Welcome to Feel Good</span>
 										<h2>Shop</h2>
 									</div>
 								</div>
@@ -527,18 +338,7 @@
 					<div
 						class="shop-action-2 d-flex justify-content-between align-items-center"
 					>
-						<div class="ch-left">
-							<div class="show-text">
-								<span>Showing 1–12 of 20 results</span>
-							</div>
-						</div>
-						<div class="ch-right">
-							<select name="sort" id="view-sort">
-								<option value="">Short by view</option>
-								<option value="">Low</option>
-								<option value="">High</option>
-							</select>
-						</div>
+						
 					</div>
 					<div class="shop-content mt-40">
 						<div class="shop-wrapper">
@@ -548,32 +348,22 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f1.png" alt="" />
 												<img
 													src="img/product/f2.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
-											<span class="onsale">HOT</span>
+											<!-- </a> -->
+											<!-- <span class="onsale">HOT</span> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$99.00</span>
 											<h4>
-												<a href="shop-details.html">Camao Ligglia Face Cream</a>
+												Camao Ligglia Face Cream
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -583,33 +373,21 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f4.png" alt="" />
 												<img
 													src="img/product/f1.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
+											<!-- </a> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$32.00</span>
 											<h4>
-												<a href="shop-details.html"
-													>Cotton Jersey Top (Variable)</a
-												>
+												Cotton Jersey Top (Variable)
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -618,31 +396,22 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f2.png" alt="" />
 												<img
 													src="img/product/f3.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
+											<!-- </a> -->
+											
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$32.00</span>
 											<h4>
-												<a href="shop-details.html">Loose Oversized Shirt </a>
+												Loose Oversized Shirt
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -651,7 +420,7 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f3.png" alt="" />
 												<img
 													src="img/product/f1.png"
@@ -659,24 +428,14 @@
 													class="secondary"
 												/>
 											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
-											<span class="onsale">-50%</span>
+											<!-- <span class="onsale">-50%</span> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$42.00</span>
 											<h4>
-												<a href="shop-details.html">Cotton Jersey Loose</a>
+												Cotton Jersey Loose
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -685,32 +444,22 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f3.png" alt="" />
 												<img
 													src="img/product/f1.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
-											<span class="onsale">-50%</span>
+											<!-- </a> -->
+											<!-- <span class="onsale">-50%</span> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$43.00</span>
 											<h4>
-												<a href="shop-details.html">Cotton Jersey Loose</a>
+											  Cotton Jersey Loose
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -719,32 +468,22 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f1.png" alt="" />
 												<img
 													src="img/product/f2.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
-											<span class="onsale">HOT</span>
+											<!-- </a> -->
+											<!-- <span class="onsale">HOT</span> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$43.00</span>
 											<h4>
-												<a href="shop-details.html">Loose Oversized Shirt</a>
+												Loose Oversized Shirt
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -753,33 +492,21 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f4.png" alt="" />
 												<img
 													src="img/product/f1.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
+											<!-- </a> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$23.00</span>
 											<h4>
-												<a href="shop-details.html"
-													>Cotton Jersey Top (Variable)</a
-												>
+												Cotton Jersey Top (Variable)
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
@@ -789,74 +516,27 @@
 								>
 									<div class="featured__product mb-30">
 										<div class="featured__product-img">
-											<a href="shop-details.html">
+											<!-- <a href="shop-details.html"> -->
 												<img src="img/product/f2.png" alt="" />
 												<img
 													src="img/product/f3.png"
 													alt=""
 													class="secondary"
 												/>
-											</a>
-											<div class="product-action">
-												<div class="product-action__icon">
-													<a href="news-details.html"
-														><i class="fal fa-shopping-cart"></i
-													></a>
-													<a href="shop-details.html"
-														><i class="fal fa-eye"></i
-													></a>
-													<a href="#"><i class="fal fa-heart"></i></a>
-												</div>
-											</div>
+											<!-- </a> -->
 										</div>
 										<div class="featured__product-text text-center">
 											<span class="price">$22.00</span>
 											<h4>
-												<a href="shop-details.html">Loose Oversized Shirt </a>
+												Loose Oversized Shirt
 											</h4>
+                      <a class="btn-1 py-1 px-3 mt-2 rounded" href="https://wa.me/918169129282" target="_blank">Buy Now</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="blog__pagination mt-20">
-							<nav aria-label="Page navigation example">
-								<ul class="pagination justify-content-center">
-									<li class="page-item">
-										<a
-											class="page-link page-link-2"
-											href="shop.html"
-											aria-label="Previous"
-										>
-											<span aria-hidden="true">«</span>
-											<span class="sr-only">Previous</span>
-										</a>
-									</li>
-									<li class="page-item">
-										<a class="page-link page-link-2" href="shop.html">1</a>
-									</li>
-									<li class="page-item">
-										<a class="page-link page-link-2" href="shop.html">2</a>
-									</li>
-									<li class="page-item">
-										<a class="page-link page-link-2" href="shop.html">3</a>
-									</li>
-									<li class="page-item">
-										<a class="page-link page-link-2" href="shop.html">...</a>
-									</li>
-									<li class="page-item">
-										<a
-											class="page-link page-link-2"
-											href="shop.html"
-											aria-label="Next"
-										>
-											<span aria-hidden="true">»</span>
-											<span class="sr-only">Next</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
+					
 					</div>
 				</div>
 			</div>
@@ -865,7 +545,7 @@
 
 		<!-- footer area start -->
 		<footer
-			class="footer"
+			class="footer mt-5"
 			data-background="img/bg/footer-bg.jpg"
 			data-overlay="9"
 		>
@@ -874,9 +554,8 @@
 					<div class="row">
 						<div class="col-xl col-lg col-md mb-4 mb-md-0">
 							<div class="icon-footer">
-								<a href="index-2.html"
-									><img src="img/logo/logo-white.png" alt=""
-								/></a>
+								<!-- <a href="index-2.html"><img src="img/logo/logo-white.png" alt=""></a> -->
+								<h2 class="text-white">Feel Good</h2>
 							</div>
 						</div>
 						<div class="col-xl col-lg col-md">
@@ -885,8 +564,8 @@
 									href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"
 									><i class="fab fa-facebook-f"></i
 								></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-youtube"></i></a>
+								<!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a> -->
 								<a
 									href="https://www.instagram.com/feelgood.clinic/"
 									target="_blank"
@@ -898,33 +577,45 @@
 				</div>
 				<div class="footer__bottom pt-60 pb-40">
 					<div class="row">
-						<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="col-xl-4 col-lg-6 col-md-6">
 							<div class="footer__left mb-30">
 								<h4 class="title text-white">About Us</h4>
 								<p>
-									Because it does not spend hours selling to customers,
-									maintaining a brick and mortar stores, or paying for a
-									commissions
+									Let your transformation begin at our cosmetic clinic based in
+									Navi Mumbai. We provide a range of health,skincare and minor
+									surgeries and the latest non-surgical cosmetic treatment
 								</p>
 								<div class="contact__list">
 									<ul>
 										<li>
 											<i class="fal fa-phone"></i>
-											<span><b>Phone: </b> +91 81691 29282</span>
+											<span
+												><b>Phone: </b
+												><a href="tel:8169129282" class="text-white"
+													>+91 8169129282</a
+												></span
+											>
 										</li>
 										<li>
 											<i class="fal fa-envelope"></i>
-											<span><b>Email: </b> arbazpathan047@gmail.com</span>
+											<span
+												><b>Email: </b
+												><a
+													href="mailto:arbazpathan047@gmail.com"
+													class="text-white"
+													>arbazpathan047@gmail.com</a
+												></span
+											>
 										</li>
-										<li>
-											<i class="fal fa-envelope"></i>
-											<span><b>Mon-Sat: </b>10:00AM - 09:00PM</span>
+										<li class="text-white">
+											<i class="fal fa-calendar-alt"></i>
+											<span><b>Mon-Sun: </b>10:00AM - 08:00PM</span>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="col-xl-4 col-lg-6 col-md-6">
 							<div class="footer-widget pl-30">
 								<h4 class="title text-white">Our Pages</h4>
 								<div class="footer__list">
@@ -932,103 +623,30 @@
 										<li><a href="index.html">Home</a></li>
 										<li><a href="service-details.html">Features</a></li>
 										<li><a href="service.html">Services</a></li>
-										<li><a href="price-plan.html">Pricing</a></li>
-										<li><a href="team.html">Team</a></li>
-										<li><a href="faq.html">Terms Conditions</a></li>
+										<!-- <li><a href="price-plan.html">Pricing</a></li> -->
+										<li><a href="portfolio.html">Gallery</a></li>
+										<!-- <li><a href="faq.html">Terms Conditions</a></li> -->
 										<li><a href="case-details.html">Privacy Policy</a></li>
-										<li><a href="news-details.html">News Insights</a></li>
-										<li><a href="faq.html">Faq</a></li>
+										<!-- <li><a href="news-details.html">News Insights</a></li> -->
+										<!-- <li><a href="faq.html">Faq</a></li> -->
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="col-xl-4 col-lg-6 col-md-6">
 							<div class="footer-widget pl-30">
 								<h4 class="title text-white">Our Services</h4>
 								<div class="footer__list">
 									<ul>
-										<li><a href="service-details.html">Face Lift</a></li>
-										<li><a href="service-details.html">Skin Implant</a></li>
-										<li><a href="service-details.html">Face Filler</a></li>
-										<li><a href="service-details.html">Eye & Eyelids</a></li>
-										<li><a href="service-details.html">Rhinoplasty</a></li>
-										<li><a href="faq.html">Terms Conditions</a></li>
-										<li><a href="service-details.html">Botex Solutions</a></li>
-										<li><a href="service-details.html">Breast Implent</a></li>
-										<li><a href="service-details.html">Radiease Implent</a></li>
+										<li><a href="hair-loss.html">Hairfall</a></li>
+                    <li><a href="acne.html">Acne</a></li>
+                    <li><a href="pigmentation.html">Pigmentation</a></li>
+                    <li><a href="weightloss.html">Weight Loss</a></li>
+                    <li><a href="skin-whitening.html">Skin Whitening</a></li>
+                    <li><a href="tanning.html">Tanning</a></li>
+                    <li><a href="botox.html">Botox Solutions</a></li>
+                    <li><a href="tattoo-removal.html">Tatto Removal</a></li>
 									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-6 col-md-6">
-							<div class="footer__right mb-30">
-								<div class="footer-widget pl-40">
-									<h4 class="title text-white">News Feeds</h4>
-									<div class="footer__news--item">
-										<div class="news__sm--box mb-20">
-											<div class="news__sm--img">
-												<img src="img/sm-img/s1.png" alt="" />
-											</div>
-											<div class="news__sm--text">
-												<div class="news__sm--meta">
-													<span
-														><a href="blog.html" class="theme-color"
-															>Experience</a
-														>
-													</span>
-													|
-													<span>August 22th, 2019</span>
-												</div>
-												<h5 class="text-white">
-													<a href="news-details.html"
-														>Most Popular Breast Implant
-													</a>
-												</h5>
-											</div>
-										</div>
-										<div class="news__sm--box mb-20">
-											<div class="news__sm--img">
-												<img src="img/sm-img/s2.png" alt="" />
-											</div>
-											<div class="news__sm--text">
-												<div class="news__sm--meta">
-													<span
-														><a href="blog.html" class="theme-color"
-															>Experience</a
-														>
-													</span>
-													|
-													<span>August 22th, 2019</span>
-												</div>
-												<h5 class="text-white">
-													<a href="news-details.html"
-														>Tips How to repair your by yourselft</a
-													>
-												</h5>
-											</div>
-										</div>
-										<div class="news__sm--box mb-20">
-											<div class="news__sm--img">
-												<img src="img/sm-img/s3.png" alt="" />
-											</div>
-											<div class="news__sm--text">
-												<div class="news__sm--meta">
-													<span
-														><a href="blog.html" class="theme-color"
-															>Experience</a
-														>
-													</span>
-													|
-													<span>August 22th, 2019</span>
-												</div>
-												<h5 class="text-white">
-													<a href="news-details.html"
-														>Face Lift is a Non-surgical Surgery</a
-													>
-												</h5>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -1059,13 +677,13 @@
 		<script src="js/ajax-form.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.scrollUp.min.js"></script>
-		<script src="js/jquery.nice-select.min.js"></script>
 		<script src="js/metisMenu.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/plugins.js"></script>
-		<script src="js/jquery.twentytwenty.js"></script>
 		<script src="js/jquery.event.move.js"></script>
+		<script src="js/jquery.twentytwenty.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
 		<script src="js/main.js"></script>
     <script>
 			var url =
