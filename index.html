@@ -58,6 +58,19 @@
         justify-content: space-between;
         row-gap: 0.25rem;
       }
+      .shop-icon-mobile {
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+        .shop-icon-mobile {
+          display: inline;
+          background-color: #fff7ef;
+          border-radius: 10px;
+        }
+        .shop-icon-mobile i {
+          color: #9e4b47;
+        }
+      }
     </style>
 
 </head>
@@ -139,11 +152,15 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div
-                                    class="mobile-toggle-bar mobile-toggle-bar-2 mobile-toggle-bar-3 text-right d-inline-block d-lg-none">
-                                    <button>
-                                        <i class="fal fa-bars"></i>
-                                    </button>
+                                <div class="p-2 shop-icon-mobile">
+                                  <a href="shop.html">
+                                    <i class="fal fa-shopping-cart"></i>
+                                  </a>
+                                </div>
+                                <div class="mobile-toggle-bar mobile-toggle-bar-2 mobile-toggle-bar-3 text-right d-inline-block d-lg-none">
+                                  <button>
+                                    <i class="fal fa-bars"></i>
+                                  </button>
                                 </div>
                             </div>
                         </div>

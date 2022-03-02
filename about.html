@@ -29,6 +29,21 @@
       .wa-chat-box-poweredby {
         display: none;
       }
+      .shop-icon-mobile {
+        display: none;
+      }
+      @media screen and (max-width: 992px) {
+        .shop-icon-mobile {
+          display: inline;
+          background-color: #fff7ef;
+          width: 40px;
+          height: 40px;
+          margin-right: .5rem;
+        }
+        .shop-icon-mobile i {
+          color: #9e4b47;
+        }
+      }
     </style>
 	</head>
 
@@ -141,6 +156,11 @@
 						</div>
 					</div>
 					<div class="col-6 d-flex justify-content-end">
+            <div class="p-2 shop-icon-mobile">
+              <a href="shop.html">
+                <i class="fal fa-shopping-cart"></i>
+              </a>
+            </div>
 						<div class="mobile-toggle-bar mobile-toggle-bar d-inline-block">
 							<button class="toggle-btn p-static">
 								<i class="fal fa-bars"></i>
