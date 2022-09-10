@@ -2794,6 +2794,7 @@ span.price {
   background-color: #fff;
   padding: 58px 0;
   border-radius: 10px;
+  height: 90%;
 }
 .featured__product-img {
   position: relative;
