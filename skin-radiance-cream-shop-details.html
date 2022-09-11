@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Feel Good - Shop</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/fav.png" />
+		<!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+		<link rel="stylesheet" href="css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="css/meanmenu.css" />
+		<link rel="stylesheet" href="css/metisMenu.min.css" />
+		<link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/twentytwenty.css" />
+		<link rel="stylesheet" href="fonts/flaticon.css" />
+		<link rel="stylesheet" href="css/main.css" />
+    <style>
+      .wa-chat-box-poweredby {
+        display: none;
+      }
+      .featured__product-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 0.25rem;
+      }
+      .shop-icon-mobile {
+        display: none;
+      }
+      @media screen and (max-width: 992px) {
+        .shop-icon-mobile {
+          display: inline;
+          background-color: #fff7ef;
+          width: 40px;
+          height: 40px;
+          margin-right: .5rem;
+        }
+        .shop-icon-mobile i {
+          color: #9e4b47;
+        }
+      }
+    </style>
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="https://browsehappy.com/">upgrade your browser</a> to improve
+				your <a href="#" class="theme-color">Experience</a> and security.
+			</p>
+		<![endif]-->
+		<!-- header area start -->
+		<div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div class="object" id="object_one"></div>
+					<div class="object" id="object_two"></div>
+					<div class="object" id="object_three"></div>
+					<div class="object" id="object_four"></div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header-transparent">
+			<div class="header-area d-none d-lg-block">
+				<!-- /. header top -->
+				<div class="header-bottom">
+					<div class="container container-3">
+						<div class="header-wrapper header-wrapper__3 header-wrapper__4">
+							<div class="header-wrapper__inner">
+								<div class="row align-items-center">
+									<div class="col-xxl-2 col-xl-2 col-lg-3">
+										<div class="logo">
+											<a href="index.html">
+												<img src="img/logo/logo.png" alt="" />
+											</a>
+										</div>
+									</div>
+									<div class="col-xl-8 col-lg-7 col-sm-6 col-4">
+										<div class="header-left d-flex align-items-center">
+											<div
+												class="header-menu-wrapper d-flex align-items-center"
+											>
+												<div
+													class="header-nav header-nav__3 f-left d-none d-lg-block"
+												>
+													<nav id="mobile-menu">
+														<ul>
+															<li><a href="index.html">Home</a></li>
+															<li><a href="about.html">About</a></li>
+															<li><a href="portfolio.html">Gallery</a></li>
+															<li><a href="service.html">Services</a></li>
+															<li><a href="contact.html">Contact</a></li>
+														</ul>
+													</nav>
+												</div>
+												<div class="mobile-toggle-bar">
+													<button>
+														<i class="fal fa-bars"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-2 col-lg-2 col-sm-6 col-8">
+										<div class="header-cta header-cta__4 text-right">
+											<ul>
+												<li>
+													<a href="shop.html"
+														><i class="fal fa-shopping-cart"></i
+													></a>
+												</li>
+												<li class="visible-only-md">
+													<a href="#" class="info__toggle-btn"
+														><i class="fal fa-bars"></i
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header area end -->
+		<!-- search popup start -->
+		<div class="search-popup">
+			<div class="search-close">
+				<button>
+					<i class="fal fa-times"></i>
+				</button>
+			</div>
+			<div class="search-form">
+				<form action="#">
+					<input type="text" placeholder="Search Here" />
+					<button><i class="fal fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+		<!-- responsive menu start -->
+		<div class="responsive-menu-3 d-block d-lg-none">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-6">
+						<div class="logo">
+							<a href="index.html"><img src="img/logo/logo.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="col-6 d-flex justify-content-end">
+            <div class="p-2 shop-icon-mobile">
+              <a href="shop.html">
+                <i class="fal fa-shopping-cart"></i>
+              </a>
+            </div>
+						<div class="mobile-toggle-bar mobile-toggle-bar d-inline-block">
+							<button class="toggle-btn p-static">
+								<i class="fal fa-bars"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-nav">
+			<div>
+				<button class="mobile-nav-close text-white">
+					<i class="fal fa-times"></i>
+				</button>
+			</div>
+			<nav>
+				<div class="nav" id="nav-tab" role="tablist">
+					<a
+						class="nav-link active"
+						id="menu-tab-1-tab"
+						data-bs-toggle="tab"
+						href="#menu-tab-1"
+						role="tab"
+						aria-controls="menu-tab-1"
+						aria-selected="true"
+						>Menu</a
+					>
+					<a
+						class="nav-link"
+						id="menu-tab-2-tab"
+						data-bs-toggle="tab"
+						href="#menu-tab-2"
+						role="tab"
+						aria-controls="menu-tab-2"
+						aria-selected="false"
+						>Info</a
+					>
+				</div>
+			</nav>
+			<div class="responsive-logo">
+				<a href="index.html"><h3 class="text-white">Feel Good</h3></a>
+			</div>
+			<div class="tab-content" id="nav-tabContent">
+				<div
+					class="tab-pane fade show active"
+					id="menu-tab-1"
+					role="tabpanel"
+					aria-labelledby="menu-tab-1-tab"
+				>
+					<div class="mobile-menu"></div>
+				</div>
+				<div
+					class="tab-pane fade"
+					id="menu-tab-2"
+					role="tabpanel"
+					aria-labelledby="menu-tab-2-tab"
+				>
+					<div class="side-info mb-30">
+						<div class="contact-list mb-30">
+							<h4>Office Address</h4>
+							<p>
+								Shop No.5 Jaywant Apartment, Hari Pandev Path, Uran- Mora
+								Road,Navi Mumbai - 400702
+							</p>
+						</div>
+						<div class="contact-list mb-30">
+							<h4>Phone Number</h4>
+							<p>+91 81691 29282</p>
+						</div>
+						<div class="contact-list mb-30">
+							<h4>Email Address</h4>
+							<p>arbazpathan047@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- info area start -->
+		<div class="extra-info">
+			<div class="close-icon">
+				<button>
+					<i class="far fa-window-close"></i>
+				</button>
+			</div>
+			<div class="logo-side mb-30">
+				<a href="index.html">
+					<!-- <img src="img/logo/logo-white.png" alt="" /> -->
+          <h3 class="text-white">Feel Good</h3>
+				</a>
+			</div>
+			<div class="side-info mb-30">
+				<div class="contact-list mb-30">
+					<h4>Office Address</h4>
+					<p>
+						Shop No.5 Jaywant Apartment, Hari Pandev Path, Uran- Mora Road,Navi
+						Mumbai - 400702
+					</p>
+				</div>
+				<div class="contact-list mb-30">
+					<h4>Phone Number</h4>
+					<p>+91 81691 29282</p>
+				</div>
+				<div class="contact-list mb-30">
+					<h4>Email Address</h4>
+					<p>arbazpathan047@gmail.com</p>
+				</div>
+			</div>
+			<div class="instagram">
+				<a href="#" target="_blank">
+					<img src="img/portfolio/1.jpg" alt="" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="img/portfolio/2.jpg" alt="" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="img/portfolio/3.jpg" alt="" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="img/portfolio/4.jpg" alt="" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="img/portfolio/5.jpg" alt="" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="img/portfolio/1.jpg" alt="" />
+				</a>
+			</div>
+			<div class="social-icon-right mt-20">
+				<a
+					href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"
+					target="_blank"
+				>
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" target="_blank">
+					<i class="fab fa-google-plus-g"></i>
+				</a>
+				<a href="https://www.instagram.com/feelgood.clinic/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		<div class="offcanvas"></div>
+		<!-- info area end -->
+		<main>
+			<!-- breadcrumb area start -->
+			<div
+				class="breadcrumb-area d-flex align-items-center breadcrumb__height"
+				data-background="img/bg/about/about-bg.jpg"
+				data-overlay="5"
+			>
+				<div class="container container-3">
+					<div class="breadcrumb__text mt-150">
+						<div class="row align-items-center">
+							<div class="col-xxl-6">
+								<div class="breadcrumb__left">
+									<div class="breadcrumb__title">
+										<span>Welcome to FeelGood</span>
+										<h2>Skin Radiance Cream</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-xxl-6">
+								<div class="breadcrumb__right">
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item">
+												<a href="index.html">Home</a>
+											</li>
+											<li class="breadcrumb-item">
+												<a href="shop.html"><b>Product</b></a>
+											</li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- breadcrumb area end -->
+
+			<!-- product details area start -->
+			<section class="product-details-area pt-120 pb-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="pro-details-tab">
+								<ul class="nav nav-pills custom-tab" role="tablist">
+									<li class="nav-item">
+										<button
+											class="nav-link active"
+											data-bs-toggle="pill"
+											data-bs-target="#tab-1"
+											type="button"
+											role="tab"
+											aria-controls="tab-1"
+											aria-selected="true"
+										>
+											<img
+												src="img/product/details-skin-rad-cream.jpg"
+												class="img-fluid"
+												alt=""
+											/>
+										</button>
+									</li>
+									<li class="nav-item">
+										<button
+											class="nav-link"
+											data-bs-toggle="pill"
+											data-bs-target="#tab-2"
+											type="button"
+											role="tab"
+											aria-controls="tab-2"
+											aria-selected="true"
+										>
+											<img
+												src="img/product/details-skin-rad-cream2.jpg"
+												class="img-fluid"
+												alt=""
+											/>
+										</button>
+									</li>
+									<li class="nav-item">
+										<button
+											class="nav-link"
+											data-bs-toggle="pill"
+											data-bs-target="#tab-3"
+											type="button"
+											role="tab"
+											aria-controls="tab-3"
+											aria-selected="true"
+										>
+											<img
+												src="img/product/details-skin-rad-cream3.jpg"
+												class="img-fluid"
+												alt=""
+											/>
+										</button>
+									</li>
+								</ul>
+								<div class="tab-content custom-content" id="pills-tabContent2">
+									<div
+										class="tab-pane fade show active"
+										id="tab-1"
+										role="tabpanel"
+									>
+										<img
+											src="img/product/details-skin-rad-cream.jpg"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="tab-pane fade" id="tab-2" role="tabpanel">
+										<img
+											src="img/product/details-skin-rad-cream2.jpg"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="tab-pane fade" id="tab-3" role="tabpanel">
+										<img
+											src="img/product/details-skin-rad-cream3.jpg"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="pro-details-content mt-15">
+								<h4>Skin Radiance Cream</h4>
+								<div class="details-rating mb-10">
+									<a href="#"><i class="fas fa-star"></i></a>
+									<a href="#"><i class="fas fa-star"></i></a>
+									<a href="#"><i class="fas fa-star"></i></a>
+									<a href="#"><i class="fas fa-star"></i></a>
+									<a href="#"><i class="fas fa-star"></i></a>
+								</div>
+								<span class="details-pro-price mb-40">Rs 1500 <s>1690</s></span>
+								<p>
+									Feel good skin Radiance cream will provide instant stunning results as it will reduce uneven skin tone and dark-spots while hydrating and moisturizing your skin for a smooth and glow complexion that will make your sin look healthier and prettier without makeup. 
+								</p>
+								
+								<div class="pro-quan-area mb-55">
+									<div class="pro-cart-btn ml-20">
+										<a href="https://wa.me/918169129282" target="_blank" class="rounded">Add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- product details area end -->
+
+			<!-- product desc area start -->
+			<section class="pro-desc-area pb-115">
+				<div class="container">
+					<div class="pro-tab-border">
+						<div class="row">
+							<div class="col-lg-12">
+								<ul
+									class="nav nav-pills mb-3 justify-content-center"
+									id="pills-tab"
+									role="tablist"
+								>
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link active"
+											id="pills-home-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-home"
+											type="button"
+											role="tab"
+											aria-controls="pills-home"
+											aria-selected="true"
+										>
+											Description
+										</button>
+									</li>
+								</ul>
+								<div class="tab-content" id="pills-tabContent">
+									<div
+										class="tab-pane fade show active"
+										id="pills-home"
+										role="tabpanel"
+										aria-labelledby="pills-home-tab"
+									>
+										<div class="product__details-des">
+											<p>
+												“Feel good will not only make you feel better but look better” <br>
+
+                        Feel good skin Radiance cream will provide instant stunning results as it will reduce uneven skin tone and dark-spots while hydrating and moisturizing your skin for a smooth and glow complexion that will make your sin look healthier and prettier without makeup. <br>
+
+                        Feel good Radiance cream is suitable for all skin types and works equally on both men and women. You will see instant results in just two weeks of regular usage. <br>
+
+                        Feel good Radiance cream contains only the most natural and safe ingredients for your skin to assure the best quality for our clients. <br>
+
+                        Ingredients: Rose Distillate, pearl powder, saffron oil, curcumin Extract, Triticum sativum, carrot oil, Alovera Extract, kumkumadi oil, cream & base. <br>
+
+                        Usage: Wash face with Luke warm water and apply the cream.
+											</p>
+
+											<div class="product__details-des-list mb-20">
+												<ul>
+													<li>
+														<span>Softens and moisturizes your skin to get rid of dryness.</span>
+													</li>
+													<li>
+														<span>Promotes a hydrated, flawless and healthy skin. </span>
+													</li>
+													<li>
+														<span>Slows down aging signs and reduces wrinkles.</span>
+													</li>
+													<li>
+														<span>Fades blemishes and dark spots.</span>
+													</li>
+													<li>
+														<span>Suitable for all skin types including sensitive skin.</span>
+													</li>
+													<li>
+														<span>No side effects.</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- product desc area end -->
+		</main>
+
+		<!-- footer area start -->
+		<footer
+			class="footer mt-5"
+			data-background="img/bg/footer-bg.jpg"
+			data-overlay="9"
+		>
+			<div class="container">
+				<div class="footer__top">
+					<div class="row">
+						<div class="col-xl col-lg col-md mb-4 mb-md-0">
+							<div class="icon-footer">
+								<!-- <a href="index-2.html"><img src="img/logo/logo-white.png" alt=""></a> -->
+								<h2 class="text-white">Feel Good</h2>
+							</div>
+						</div>
+						<div class="col-xl col-lg col-md">
+							<div class="social__icon text-md-end text-start">
+								<a
+									href="https://www.facebook.com/people/DrArbazPathan/100008181751669/"
+									><i class="fab fa-facebook-f"></i
+								></a>
+								<!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a> -->
+								<a
+									href="https://www.instagram.com/feelgood.clinic/"
+									target="_blank"
+									><i class="fab fa-instagram"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom pt-60 pb-40">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6 col-md-6">
+							<div class="footer__left mb-30">
+								<h4 class="title text-white">About Us</h4>
+								<p>
+									Let your transformation begin at our cosmetic clinic based in
+									Navi Mumbai. We provide a range of health,skincare and minor
+									surgeries and the latest non-surgical cosmetic treatment
+								</p>
+								<div class="contact__list">
+									<ul>
+										<li>
+											<i class="fal fa-phone"></i>
+											<span
+												><b>Phone: </b
+												><a href="tel:8169129282" class="text-white"
+													>+91 8169129282</a
+												></span
+											>
+										</li>
+										<li>
+											<i class="fal fa-envelope"></i>
+											<span
+												><b>Email: </b
+												><a
+													href="mailto:arbazpathan047@gmail.com"
+													class="text-white"
+													>arbazpathan047@gmail.com</a
+												></span
+											>
+										</li>
+										<li class="text-white">
+											<i class="fal fa-calendar-alt"></i>
+											<span><b>Mon-Sun: </b>10:00AM - 08:00PM</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6 col-md-6">
+							<div class="footer-widget pl-30">
+								<h4 class="title text-white">Our Pages</h4>
+								<div class="footer__list">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="service-details.html">Features</a></li>
+										<li><a href="service.html">Services</a></li>
+										<!-- <li><a href="price-plan.html">Pricing</a></li> -->
+										<li><a href="portfolio.html">Gallery</a></li>
+										<!-- <li><a href="faq.html">Terms Conditions</a></li> -->
+										<li><a href="case-details.html">Privacy Policy</a></li>
+										<!-- <li><a href="news-details.html">News Insights</a></li> -->
+										<!-- <li><a href="faq.html">Faq</a></li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6 col-md-6">
+							<div class="footer-widget pl-30">
+								<h4 class="title text-white">Our Services</h4>
+								<div class="footer__list">
+									<ul>
+										<li><a href="hair-loss.html">Hairfall</a></li>
+                    <li><a href="acne.html">Acne</a></li>
+                    <li><a href="pigmentation.html">Pigmentation</a></li>
+                    <li><a href="weightloss.html">Weight Loss</a></li>
+                    <li><a href="skin-whitening.html">Skin Whitening</a></li>
+                    <li><a href="tanning.html">Tanning</a></li>
+                    <li><a href="botox.html">Botox Solutions</a></li>
+                    <li><a href="tattoo-removal.html">Tatto Removal</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-area">
+				<div class="footer__copyright">
+					<p>
+						Copyright &copy;
+						<a href="mailto:arbazpathan047@gmail.com">by Feel Good</a> - 2022 |
+						Developed by <a href="#">Webicos</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- footer area end -->
+
+		<!-- JS here -->
+		<script src="js/vendor/jquery-3.5.0.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/one-page-nav-min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.meanmenu.min.js"></script>
+		<script src="js/ajax-form.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<script src="js/metisMenu.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/jquery.event.move.js"></script>
+		<script src="js/jquery.twentytwenty.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/main.js"></script>
+    <script>
+			var url =
+				"https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21984";
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = url;
+			var options = {
+				enabled: true,
+				chatButtonSetting: {
+					backgroundColor: "#4dc247",
+					ctaText: "",
+					borderRadius: "25",
+					marginLeft: "0",
+					marginBottom: "150",
+					marginRight: "16",
+					position: "right",
+				},
+				brandSetting: {
+					brandName: "Feel Good",
+					brandSubTitle: "",
+					brandImg: "/img/wp-icon.png",
+					welcomeText: "Hi there!\nHow can I help you?",
+					messageText: "Hello",
+					backgroundColor: "#0a5f54",
+					ctaText: "Start Chat",
+					borderRadius: "25",
+					autoShow: false,
+					phoneNumber: "918169129282",
+				},
+			};
+			s.onload = function () {
+				CreateWhatsappChatWidget(options);
+			};
+			var x = document.getElementsByTagName("script")[0];
+			x.parentNode.insertBefore(s, x);
+		</script>
+	</body>
+</html>
